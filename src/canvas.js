@@ -9,8 +9,8 @@ import {
   Dimensions,
   TouchableOpacity
 } from 'react-native';
-import NativeModules from 'NativeModules';
 
+import NativeModules from 'NativeModules';
 import Sketch from 'react-native-sketch';
 
 const width = Dimensions.get('window').width;
@@ -19,7 +19,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: 'aquamarine'
   },
   sketch: {
     width: width,
@@ -40,19 +41,23 @@ const styles = StyleSheet.create({
 
 const Canvas = React.createClass({
   getInitialState(){
-    
+
     return {encodedSignature: null}
   },
   onSave() {
     console.log('saving', this.sketch)
     this.sketch.saveImage(this.state.encodedSignature)
-    .then((data) => console.log('datum', data))
+    .then((data) => {
+      console.log('datum', data)
+    })
     .catch((error) => console.log(error));
   },
+  
   onReset() {
-    // this.sketch.props.onReset()
-    console.log('reset', this.sketch.props.onReset)
-    // this.setState({encodedSignature: null})
+    console.log('reset', this.sketch)
+
+    // this.sketch.onReset()
+    // this.onUpdate(null)
 
   },
 
@@ -63,7 +68,7 @@ const Canvas = React.createClass({
     return (
       <View style={styles.container}>
         <Sketch
-          fillColor="black"
+          fillColor="white"
           strokeColor="blue"
           strokeThickness={2}
           onReset={this.onReset}
@@ -78,13 +83,7 @@ const Canvas = React.createClass({
         >
           <Text style={styles.buttonText}>Save</Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          disabled={!this.state.encodedSignature}
-          style={styles.button}
-          onPress={this.onReset}
-        >
-          <Text style={styles.buttonText}>Reset</Text>
-        </TouchableOpacity>
+     
       </View>
     );
   }

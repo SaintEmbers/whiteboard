@@ -25,6 +25,7 @@
 		22924C7682E6449E8C276524 /* libA0RNLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2C9852470243A69E9A810E /* libA0RNLock.a */; };
 		6C2E484681E646FCAD0A34E4 /* libRNSketch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CE03FEF7B84A5F95B21FEA /* libRNSketch.a */; };
 		7E48F7571D2C76BA00161789 /* RNSketch in Resources */ = {isa = PBXBuildFile; fileRef = 7E48F7561D2C76BA00161789 /* RNSketch */; };
+		7E48F7891D2DCF5100161789 /* evernote in Resources */ = {isa = PBXBuildFile; fileRef = 7E48F7881D2DCF5000161789 /* evernote */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		9D2F80EEFA7B63E99344F9A0 /* libPods-WhiteboardTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C36BBDEC13AB4088B8DF841 /* libPods-WhiteboardTests.a */; };
 		F8BD8035F189D2BAC2B9C2B5 /* libPods-Whiteboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A16A73BBA345D729E6DF838C /* libPods-Whiteboard.a */; };
@@ -149,6 +150,7 @@
 		78148703865591C981E08852 /* Pods-WhiteboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiteboardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhiteboardTests/Pods-WhiteboardTests.release.xcconfig"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		7E48F7561D2C76BA00161789 /* RNSketch */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RNSketch; path = "../node_modules/react-native-sketch/RNSketch"; sourceTree = "<group>"; };
+		7E48F7881D2DCF5000161789 /* evernote */ = {isa = PBXFileReference; lastKnownFileType = folder; name = evernote; path = ../node_modules/evernote; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		93CE03FEF7B84A5F95B21FEA /* libRNSketch.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSketch.a; sourceTree = "<group>"; };
 		A16A73BBA345D729E6DF838C /* libPods-Whiteboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Whiteboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -350,6 +352,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				7E48F7881D2DCF5000161789 /* evernote */,
 				7E48F7561D2C76BA00161789 /* RNSketch */,
 				13B07FAE1A68108700A75B9A /* Whiteboard */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -610,6 +613,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E48F7891D2DCF5100161789 /* evernote in Resources */,
 				7E48F7571D2C76BA00161789 /* RNSketch in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,

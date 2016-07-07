@@ -7,10 +7,13 @@ import {
 } from 'react-native';
 
 import Canvas from './canvas'
+import Evernote from '../evernote/index'
 
+console.log('evernote', Evernote)
 
 class ProfileView extends Component {
   render() {
+    console.log('profile props', this.props)
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>

@@ -21,7 +21,7 @@ class Whiteboard extends Component {
   render() {
     return (
       <Navigator style={styles.navigator}
-        initialRoute={{ name: "Canvas"}}
+        initialRoute={{ name: "Welcome"}}
         renderScene={this.renderScene}
         navigationBar={
           <Navigator.NavigationBar
